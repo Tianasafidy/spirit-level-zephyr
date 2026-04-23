@@ -1,0 +1,16 @@
+/ {
+  dm163: dm163 {
+    compatible = "siti,dm163";
+    selbk-gpios = <&gpioc 5 0>;
+    lat-gpios = <&gpioc 4 GPIO_ACTIVE_LOW>;
+    rst-gpios = <&gpioc 3 GPIO_ACTIVE_LOW>;
+    dck-gpios = <&gpiob 1 0>;
+    sin-gpios = <&gpioa 4 0>;
+  };
+  
+  rgb_matrix: rgb_matrix {
+    compatible = "rgb_matrix";
+    rows-gpios = <&gpiob 2 0>, <&gpioa 15 0>, <&gpioa 2 0>, <&gpioa 7 0>,
+                 <&gpioa 6 0>, <&gpioa 5 0>, <&gpiob 0 0>, <&gpioa 3 0>;
+  };
+};

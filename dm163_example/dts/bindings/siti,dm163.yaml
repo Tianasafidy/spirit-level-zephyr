@@ -1,0 +1,23 @@
+description: SITI DM163 LED controller node
+
+compatible: "siti,dm163"
+
+properties:
+  sin-gpios:
+    type: phandle-array
+    required: true
+  selbk-gpios:
+    type: phandle-array
+    required: true
+  lat-gpios:
+    type: phandle-array
+    required: true
+  dck-gpios:
+    type: phandle-array
+    required: true
+  rst-gpios:
+    type: phandle-array
+    required: true
+  en-gpios:
+    type: phandle-array
+    required: false

@@ -1,0 +1,8 @@
+description: RGB matrix
+
+compatible: "rgb_matrix"
+
+properties:
+  rows-gpios:
+    type: phandle-array
+    required: true

@@ -1,0 +1,6 @@
+config DM163_DRIVER
+  bool "Support for the DM163 led driver"
+  default y
+  depends on DT_HAS_SITI_DM163_ENABLED
+  select GPIO
+  select LED
